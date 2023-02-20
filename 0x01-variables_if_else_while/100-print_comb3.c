@@ -1,28 +1,31 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ * Description: prints two digits combination
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-  int tens;
-  int ones;
-  for (tens = 0; tens <=9; tens++)
-    {
-      for (ones = tens +1; ones <= 9; ones++)
-	{
-	  putchar(tens +'0');
-	  putchar(ones +'0');
+	int c, i;
 
-	  if (tens < 8)
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
+	for (c = '0'; c <= '9'; c++)
+	{
+		for (i = '0'; i <= '9'; i++)
+		{
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
+
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-    }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+	return (0);
 }
