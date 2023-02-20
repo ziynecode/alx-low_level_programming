@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
 * main - Print combinations of two digit numbers
 *
@@ -24,6 +24,5 @@ int main(void)
 	}
     }
   putchar('\n');
-
   return (0);
 }
