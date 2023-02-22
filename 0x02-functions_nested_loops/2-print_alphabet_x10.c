@@ -1,19 +1,20 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
+
 /**
- * main - Entry point
- * Description: prints the alphabet in lowercase\n
- * Return: Always 0 (success)
+ * print_alphabet_x10 - Makes 10 times the alphabet, in lowercase.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	int ch;
+	int i = 0;
+	char c;
 
-
-	for (ch = 'a'; ch <= 'z'; ch++)
+	while (i++ <= 9)
 	{
-		putchar(ch);
+	for (c = 'a'; c <= 'z'; c++)
+	_putchar(c);
+	{
+	_putchar('\n');
 	}
-	putchar('\n');
-	return (0);
+	i++;
+	}
 }
