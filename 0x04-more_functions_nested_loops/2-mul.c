@@ -1,20 +1,17 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * mul - multiples two integers
- * @a: int to be multiplied to b
- * @b: int to be multiplied to a
- * Return: result
- */
+* mul - function that multiplies two integers
+* @a: First integer
+* @b: Second integer
+* Return: mul.
+*/
 int mul(int a, int b)
 {
-	int c;
+	int x;
 
-	c = a * b;
-
-	return (c);
+	x = a * b;
+return (x);
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
+
